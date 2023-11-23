@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>right2</title>
+</head>
+<body>
+    <h2>String-1 -- right2</h2>
+    <p>Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start. The string length will be at least 2.</p>
+    <form action="">
+        <label>
+            <span>Enter name please</span>
+            <input type="text" id="name" placeholder="name">
+        </label>
+    </form>
+    <button>Yuborish</button>
+    <p id="data"></p>
+
+    <script>
+        let btn = document.querySelector("button");
+        let p = document.getElementById("data");
+
+        function hello(ism) {
+            p.innerHTML += "<li>" + ism + "</li>" + "<br>";
+        }
+
+        btn.addEventListener("click", function (){
+            let name  = document.getElementById("name").value;
+            hello(name.substring(name.length - 2) + name.substring(0, name.length - 2))
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>

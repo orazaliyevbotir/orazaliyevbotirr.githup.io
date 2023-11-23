@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helloName</title>
+</head>
+<body>
+    <h2>String-1 -- helloName</h2>
+    <p>Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".</p>
+    <form action="">
+        <label>
+            <span>Enter name please</span>
+            <input type="text" id="name" placeholder="name">
+        </label>
+    </form>
+    <button>Yuborish</button>
+    <p id="data"></p>
+
+    <script>
+        let btn = document.querySelector("button");
+        let p = document.getElementById("data");
+
+        function hello(ism) {
+            p.innerHTML += "<li>" + "Hello " + ism + "!" + "</li>" + "<br>";
+        }
+
+        btn.addEventListener("click", function (){
+            let name  = document.getElementById("name").value;
+            hello(name)
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>

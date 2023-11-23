@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makeTags</title>
+</head>
+<body>
+    <h2>String-1 -- makeTags</h2>
+    <p>The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "Yay". Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>Yay</i>".</p>
+    <form action="">
+        <label>
+            <span>Enter name please</span>
+            <input type="text" id="name" placeholder="name">
+        </label>
+    </form>
+    <button>Yuborish</button>
+    <p id="data"></p>
+
+    <script>
+        let btn = document.querySelector("button");
+        let p = document.getElementById("data");
+
+        function hello(ism) {
+            p.innerHTML += "<i>" + ism + "</i>" + "<br>";
+        }
+
+        btn.addEventListener("click", function (){
+            let name  = document.getElementById("name").value;
+            hello(name)
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twoChar</title>
+</head>
+<body>
+    <h2>String-1 -- twoChar</h2>
+    <p>Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length 2, use the first 2 chars. The string length will be at least 2.</p>
+    <form action="">
+        <label>
+            <span>Enter name please</span>
+            <input type="text" id="name" placeholder="name"><br>
+            <span>Enter number please</span>
+            <input type="number" id="number" placeholder="number">
+        </label>
+    </form>
+    <button>Yuborish</button>
+    <p id="data"></p>
+
+    <script>
+        let btn = document.querySelector("button");
+        let p = document.getElementById("data");
+
+        function hello(ism) {
+            p.innerHTML += "<li>" + ism + "</li>" + "<br>";
+        }
+
+        btn.addEventListener("click", function (){
+            let name  = document.getElementById("name").value;
+            let number = document.getElementById("number").value
+            hello(number < 0 + number > name.length - 2)
+            return name.substring(0 , 2)
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>

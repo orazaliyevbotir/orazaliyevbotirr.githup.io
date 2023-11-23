@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>withoutEnd2</title>
+</head>
+<body>
+    <h2>String-1 -- withoutEnd2</h2>
+    <p>Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.</p>
+    <form action="">
+        <label>
+            <span>Enter name please</span>
+            <input type="text" id="name" placeholder="name">
+        </label>
+    </form>
+    <button>Yuborish</button>
+    <p id="data"></p>
+
+    <script>
+        let btn = document.querySelector("button");
+        let p = document.getElementById("data");
+
+        function hello(ism) {
+            p.innerHTML += "<li>" + ism + "</li>" + "<br>";
+        }
+
+        btn.addEventListener("click", function (){
+            let name  = document.getElementById("name").value;
+            hello(name.substring(1, name.length - 1))
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
